@@ -1,9 +1,8 @@
 package config;
 
 import org.aeonbits.owner.Config;
-
 @Config.Sources({
-        "file:${configFilePath}",
+        "file:${configFilePath}/file.properties.txt",
         "classpath:api-prod.properties"
          })
 public interface ApiConfig extends Config {
