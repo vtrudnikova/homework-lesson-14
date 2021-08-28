@@ -13,7 +13,7 @@ public class ApiTest {
         String url = apiConfig.getBaseUrl();
         RestAssured.given()
                 .baseUri(url)
-                .queryParam("token",apiConfig.getToken())
+                .queryParam("token", apiConfig.getToken())
                 .get()
                 .then().statusCode(200);
     }
